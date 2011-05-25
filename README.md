@@ -40,7 +40,7 @@ Unix sockets handle communication between silo->cluster->silos.
 
     socket = io.listen(server)
 
-    io.on('connection', function(client){
+    socket.on('connection', function(client){
       // Use socket.io as you normally would
     });
 
