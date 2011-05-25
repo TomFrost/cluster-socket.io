@@ -44,6 +44,6 @@ Unix sockets handle communication between silo->cluster->silos.
       // Use socket.io as you normally would
     });
 
-    cluster(app)
+    cluster(server)
       .use(bridge(socket))
       .listen(3000);
