@@ -5,7 +5,6 @@ var
 fs      = require('fs'),
 path    = require('path'),
 net     = require('net'),
-log     = require('log'),
 boundry = '\n.\n';
 
 exports = module.exports = function(io, host, port) {
