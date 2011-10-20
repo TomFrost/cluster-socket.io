@@ -81,8 +81,8 @@ exports = module.exports = function(io, host, port) {
       workers.forEach(function(w) {
         w.pipe(worker, { end: false });
         worker.pipe(w, { end: false });
-        w.setMaxListeners(workers.length * 2);
-        worker.setMaxListeners(workers.length * 2);
+        w.setMaxListeners(workers.length * 4 + workers.length);
+        worker.setMaxListeners(workers.length * 4 + workers.length);
       });
 
 
